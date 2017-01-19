@@ -1,8 +1,10 @@
 // IIFE - Immediately Invoked Function Expression
 (function () {
+    // GLOBAL Variables
     var canvas;
     var stage;
     var helloLabel;
+    var clickMeButton;
     function Start() {
         // reference to the canvas element on the index.html
         canvas = document.getElementById("canvas");
@@ -16,8 +18,7 @@
         Game();
     }
     // called every frame
-    function Update() {
-        helloLabel.rotation += 5;
+    function Update(event) {
         stage.update();
     }
     function Game() {
@@ -28,6 +29,12 @@
         helloLabel.x = 320;
         helloLabel.y = 240;
         stage.addChild(helloLabel);
+        clickMeButton = new createjs.Bitmap("../Assets/images/clickMeButton.png");
+        clickMeButton.on("click", clickMeButton_Click);
+        stage.addChild(clickMeButton);
+    }
+    function clickMeButton_Click() {
+        helloLabel.text = "Clicked!";
     }
     window.onload = Start;
 })();

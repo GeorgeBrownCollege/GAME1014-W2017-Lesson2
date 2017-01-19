@@ -1,0 +1,26 @@
+{
+  "name": "game1014-w2017-lesson2",
+  "version": "1.0.0",
+  "description": "CreateJS Demo",
+  "main": "index.js",
+  "dependencies": {
+    "@types/easeljs": "^0.8.35",
+    "@types/preloadjs": "^0.6.32",
+    "@types/soundjs": "^0.6.27",
+    "@types/tweenjs": "^0.6.27"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeorgeBrownCollege/GAME1014-W2017-Lesson2.git"
+  },
+  "author": "Tom Tsiliopoulos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeorgeBrownCollege/GAME1014-W2017-Lesson2/issues"
+  },
+  "homepage": "https://github.com/GeorgeBrownCollege/GAME1014-W2017-Lesson2#readme"
+}
